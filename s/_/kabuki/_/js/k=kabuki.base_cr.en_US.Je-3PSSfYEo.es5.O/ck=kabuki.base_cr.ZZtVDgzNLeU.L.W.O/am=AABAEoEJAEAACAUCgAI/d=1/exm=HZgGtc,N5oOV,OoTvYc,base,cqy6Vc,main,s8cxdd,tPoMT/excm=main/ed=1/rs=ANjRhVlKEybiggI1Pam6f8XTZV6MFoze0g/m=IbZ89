@@ -1,0 +1,13 @@
+this._yttv=this._yttv||{};(function(_){var window=this;
+try{
+var Ukc=function(){return Tkc.map(function(a){var b=a,c,d;if(c=(d=_.Xi().model)==null?void 0:d.toLowerCase().includes("appletv"))c=_.Xi().browser_version.split("."),c.length===0?c=!1:(c=Number(c[0]),c=isNaN(c)?!1:c>=21);c&&a.includes("vp09")&&(b+="; experimental=allowed");return{initDataTypes:["cenc","webm"],audioCapabilities:[{contentType:'audio/mp4; codecs="mp4a.40.2"',robustness:"SW_SECURE_CRYPTO"}],videoCapabilities:[{contentType:a,robustness:"HW_SECURE_ALL"},{contentType:b,robustness:"SW_SECURE_DECODE"}]}})},
+Vkc=function(a){var b,c;return _.y(function(d){switch(d.A){case 1:if(!navigator.requestMediaKeySystemAccess)return d.return(null);b=Ukc();c=null;d.G(2);return d.yield(navigator.requestMediaKeySystemAccess(a,b),4);case 4:c=d.j;d.I(3);break;case 2:d.F();case 3:return d.return(c)}})},Xkc=function(){var a,b,c,d,e;return _.y(function(f){if(f.A==1){if(Wkc)return f.return(Wkc);a=["com.youtube.widevine.l3","com.widevine.alpha"];return f.yield(Promise.all(a.map(function(g){return Vkc(g)})),2)}b=f.j;c=_.r(b);
+for(d=c.next();!d.done;d=c.next())if(e=d.value)return Wkc=e,f.return(e);return f.return(null)})},Tkc=['video/webm; codecs="vp9"','video/webm; codecs="vp09.00.21.08"'],Wkc=null;var Ykc=function(){};Ykc.prototype.qJ=function(a){a=a===void 0?{}:a;var b=a.shouldRetry===void 0?!1:a.shouldRetry;var c=a.delayMs===void 0?5E3:a.delayMs;var d=this;return _.y(function(e){return e.return(Xkc().then(function(f){if(f===null&&b)Zkc(d,c);else{var g;_.E.get(_.Bj).set(_.Qqa,(g=f==null?void 0:f.getConfiguration())!=null?g:{})}}))})};var Zkc=function(a,b){_.Yi(b===void 0?5E3:b).then(function(){return a.qJ()})};_.V(_.mdc,function(){return new Ykc});
+}catch(e){_._DumpException(e)}
+try{
+_.u("IbZ89");
+
+_.w();
+}catch(e){_._DumpException(e)}
+})(this._yttv);
+// Google Inc.
